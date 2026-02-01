@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evolve - 成長を可視化するアプリ</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    header {
+      text-align: center;
+      padding: 60px 0;
+      color: white;
+    }
+    .logo {
+      font-size: 64px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .tagline {
+      font-size: 20px;
+      opacity: 0.9;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+    }
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #667eea;
+    }
+    p {
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .features {
+      display: grid;
+      gap: 20px;
+    }
+    .feature {
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+    .feature-icon {
+      font-size: 32px;
+      flex-shrink: 0;
+    }
+    .feature-text h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+      color: #333;
+    }
+    .feature-text p {
+      font-size: 14px;
+      margin: 0;
+    }
+    .cta {
+      text-align: center;
+      padding: 40px;
+    }
+    .app-store-badge {
+      height: 50px;
+      margin: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: white;
+    }
+    footer a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      opacity: 0.8;
+    }
+    footer a:hover {
+      opacity: 1;
+    }
+    .copyright {
+      margin-top: 20px;
+      opacity: 0.6;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">🦋</div>
+      <h1>Evolve</h1>
+      <p class="tagline">成長を可視化するアプリ</p>
+    </header>
+
+    <div class="card">
+      <h2>アプリについて</h2>
+      <p>Evolveは、日々の活動を記録することでキャラクターが成長・変化するモチベーションアプリです。</p>
+      <p>筋トレ、有酸素運動、ストレッチなど、どんな活動でもOK。毎日の積み重ねがキャラクターの見た目に反映されます。</p>
+    </div>
+
+    <div class="card">
+      <h2>主な機能</h2>
+      <div class="features">
+        <div class="feature">
+          <span class="feature-icon">📝</span>
+          <div class="feature-text">
+            <h3>かんたん記録</h3>
+            <p>筋トレ、有酸素、軽めの活動を素早く記録。セット数、重量、時間なども詳細に記録できます。</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🎮</span>
+          <div class="feature-text">
+            <h3>キャラクター成長</h3>
+            <p>活動するとレベルアップ、サボるとレベルダウン。目に見える変化がモチベーションに。</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🎯</span>
+          <div class="feature-text">
+            <h3>2つの目標モード</h3>
+            <p>ダイエット目的なら痩せていくキャラ、筋トレ目的なら筋肉がついていくキャラを選べます。</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">📅</span>
+          <div class="feature-text">
+            <h3>カレンダー表示</h3>
+            <p>過去の活動履歴をカレンダーで確認。継続の軌跡が一目でわかります。</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🌙</span>
+          <div class="feature-text">
+            <h3>休息日設定</h3>
+            <p>週の固定休息日を設定可能。休息日はレベルが下がらないので安心。</p>
+          </div>
+        </div>
+        <div class="feature">
+          <span class="feature-icon">🔒</span>
+          <div class="feature-text">
+            <h3>オフライン対応</h3>
+            <p>すべてのデータは端末内に保存。インターネット接続不要、プライバシーも安心。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card cta">
+      <h2>ダウンロード</h2>
+      <p>App Storeで近日公開予定</p>
+      <!-- <a href="#"><img src="app-store-badge.svg" alt="App Storeからダウンロード" class="app-store-badge"></a> -->
+    </div>
+
+    <footer>
+      <a href="privacy.html">プライバシーポリシー</a>
+      <a href="support.html">サポート</a>
+      <div class="copyright">© 2026 Evolve. All rights reserved.</div>
+    </footer>
+  </div>
+</body>
+</html>
